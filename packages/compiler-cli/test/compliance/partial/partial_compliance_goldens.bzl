@@ -44,7 +44,6 @@ def partial_compliance_golden(filePath):
         link_workspace_root = True,
         tags = [
             # TODO(josephperrott): Begin running these tests on windows after updating to rules_nodejs 3.0
-            "no-windows",
         ],
         visibility = [":__pkg__"],
         data = data,
@@ -55,7 +54,6 @@ def partial_compliance_golden(filePath):
         tags = [
             "ivy-only",
             # TODO(josephperrott): Begin running these tests on windows after updating to rules_nodejs 3.0
-            "no-windows",
         ],
         name = "%s.golden" % path,
         src = "//packages/compiler-cli/test/compliance/test_cases:%s/GOLDEN_PARTIAL.js" % path,
