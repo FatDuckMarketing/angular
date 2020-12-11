@@ -23,6 +23,12 @@ The file should look like this.
 
 <code-example path="toh-pt2/src/app/mock-heroes.ts" header="src/app/mock-heroes.ts"></code-example>
 
+<div class="alert is-important">
+
+If your build fails, check your `tsconfig.app.json` file to make sure `mock-heroes.ts` has been added into `files`.
+
+</div>
+
 ## Displaying heroes
 
 Open the `HeroesComponent` class file and import the mock `HEROES`.
